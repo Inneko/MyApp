@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1221dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etVrstaProizvoda"
+            android:hint="@string/sl_vrstaproizvoda"
+            android:layout_below="@+id/tvvrstaproizvoda"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sl_provjeriproizvod"
+            android:id="@+id/btn_provjeriproizvod"
+            android:layout_gravity="right"
+            android:layout_below="@+id/etServiser"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etSerijskiBroj"
+            android:hint="@string/sl_serijskibroj"
+            android:layout_below="@+id/tvserijskibroj"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_serijskibroj"
+            android:id="@+id/tvserijskibroj"
+            android:layout_below="@+id/etServiser"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_datumservisa"
+            android:id="@+id/tvdatumservisa"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/etDatumServisa"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/tvdatumservisa"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:editable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_serviser"
+            android:id="@+id/tvseriser"
+            android:layout_below="@+id/etDatumServisa"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etServiser"
+            android:hint="@string/sl_serviser"
+            android:layout_below="@+id/tvseriser"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_vrstaproizvoda"
+            android:id="@+id/tvvrstaproizvoda"
+            android:layout_below="@+id/etSerijskiBroj"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_datumkupovine"
+            android:id="@+id/tvdatumkupovine"
+            android:layout_below="@+id/etVrstaProizvoda"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date|datetime|numberDecimal"
+            android:ems="10"
+            android:id="@+id/etDatumKupovine"
+            android:hint="@string/sl_datumkupovine"
+            android:layout_below="@+id/tvdatumkupovine"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_datumistekagarancije"
+            android:id="@+id/tvdatumistekagarancije"
+            android:layout_below="@+id/etDatumKupovine" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date|numberDecimal"
+            android:ems="10"
+            android:id="@+id/etDatumIstekaGarancije"
+            android:layout_below="@+id/tvdatumistekagarancije"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/sl_datumistekagarancije" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_kupac"
+            android:id="@+id/tvklijent"
+            android:layout_below="@+id/etDatumIstekaGarancije"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etKupac"
+            android:layout_below="@+id/tvklijent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/sl_kupac" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_adresa"
+            android:id="@+id/tvadresa"
+            android:layout_below="@+id/etKupac"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etAdresa"
+            android:layout_below="@+id/tvadresa"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/sl_adresa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_mjesto"
+            android:id="@+id/tvmjesto"
+            android:layout_below="@+id/etAdresa"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etMjesto"
+            android:layout_below="@+id/tvmjesto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/sl_mjesto" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_kontakt1"
+            android:id="@+id/tvkontakt1"
+            android:layout_below="@+id/etMjesto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etKontakt1"
+            android:layout_below="@+id/tvkontakt1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/sl_kontakt1"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_kontakt2"
+            android:id="@+id/tvkontakt2"
+            android:layout_below="@+id/etKontakt1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etKontakt2"
+            android:layout_below="@+id/tvkontakt2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/sl_kontakt2"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_primjedbakupca"
+            android:id="@+id/tvprimjedbakupca"
+            android:layout_below="@+id/etKontakt2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPrimjedbaKupca"
+            android:layout_below="@+id/tvprimjedbakupca"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/sl_primjedbakupca"
+            android:maxLines="15"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_opisintervencije"
+            android:id="@+id/tvopisintervencije"
+            android:layout_below="@+id/etPrimjedbaKupca"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etOpisIntervencije"
+            android:layout_below="@+id/tvopisintervencije"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/sl_opisintervencije"
+            android:maxLines="25"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_napomena"
+            android:id="@+id/tvnapomena"
+            android:layout_below="@+id/etOpisIntervencije"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNapomena"
+            android:hint="@string/sl_napomena"
+            android:maxLines="15"
+            android:layout_below="@+id/tvnapomena"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_kvarpodlijezegaranciji"
+            android:id="@+id/tvkvarpodlijezegaranciji"
+            android:layout_below="@+id/etNapomena"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_troskovidijelova"
+            android:id="@+id/tvtroskovidijelova"
+            android:layout_below="@+id/spinnerGarancija"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/etTroskoviDijelova"
+            android:hint="@string/sl_troskovidijelova"
+            android:layout_below="@+id/tvtroskovidijelova"
+            android:layout_alignRight="@+id/tvkvarpodlijezegaranciji"
+            android:layout_alignEnd="@+id/tvkvarpodlijezegaranciji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_troskovirada"
+            android:id="@+id/tvtroskovirada"
+            android:layout_below="@+id/etTroskoviDijelova"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:ems="10"
+            android:id="@+id/etTroskoviRada"
+            android:hint="@string/sl_troskovirada"
+            android:layout_below="@+id/tvtroskovirada"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/etTroskoviDijelova"
+            android:layout_alignEnd="@+id/etTroskoviDijelova" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_putnitroskovi"
+            android:id="@+id/tvputnitroskovi"
+            android:layout_below="@+id/etTroskoviRada"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:ems="10"
+            android:id="@+id/etPutniTroskovi"
+            android:hint="@string/sl_putnitroskovi"
+            android:layout_below="@+id/tvputnitroskovi"
+            android:layout_alignRight="@+id/etTroskoviRada"
+            android:layout_alignEnd="@+id/etTroskoviRada" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_ukupnitroskovi"
+            android:id="@+id/tvukupnitroskovi"
+            android:layout_below="@+id/etPutniTroskovi" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:ems="10"
+            android:id="@+id/etUkupniTroskovi"
+            android:layout_below="@+id/tvukupnitroskovi"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/tvdatumistekagarancije"
+            android:layout_alignEnd="@+id/tvdatumistekagarancije" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_nacinplacanja"
+            android:id="@+id/tvnacinplacanja"
+            android:layout_below="@+id/etUkupniTroskovi"
+            android:layout_alignLeft="@+id/tvukupnitroskovi"
+            android:layout_alignStart="@+id/tvukupnitroskovi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_statusplacanja"
+            android:id="@+id/tvstatusplacanja"
+            android:layout_below="@+id/spinnerNacinPlacanja" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_radservisera"
+            android:id="@+id/tvradservisera"
+            android:layout_below="@+id/spinnerStatusPlacanja"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:ems="10"
+            android:id="@+id/etRadServisera"
+            android:layout_below="@+id/tvradservisera"
+            android:layout_alignLeft="@+id/tvradservisera"
+            android:layout_alignStart="@+id/tvradservisera"
+            android:layout_alignRight="@+id/tvradservisera"
+            android:layout_alignEnd="@+id/tvradservisera" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/sl_putservisera"
+            android:id="@+id/tvputservisera"
+            android:layout_below="@+id/etRadServisera"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number|numberDecimal"
+            android:ems="10"
+            android:id="@+id/etPutServisera"
+            android:layout_below="@+id/tvputservisera"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/tvradservisera"
+            android:layout_alignEnd="@+id/tvradservisera" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerGarancija"
+            android:layout_below="@+id/tvkvarpodlijezegaranciji"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@id/tvkvarpodlijezegaranciji"/>
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/etTroskoviDijelova"
+            android:layout_toRightOf="@+id/etTroskoviDijelova"
+            android:layout_toEndOf="@+id/etTroskoviDijelova"
+            android:id="@+id/absoluteLayout"
+            android:layout_above="@+id/absoluteLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/sl_valuta"
+                android:id="@+id/textView"
+                android:layout_x="0dp"
+                android:layout_y="78dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/sl_valuta"
+                android:id="@+id/textView2"
+                android:layout_x="0dp"
+                android:layout_y="7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/sl_valuta"
+                android:id="@+id/textView4"
+                android:layout_x="2dp"
+                android:layout_y="146dp"
+                android:layout_alignBottom="@+id/absoluteLayout"
+                android:layout_centerHorizontal="true" />
+        </AbsoluteLayout>
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/tvukupnitroskovi"
+            android:layout_toRightOf="@+id/etUkupniTroskovi"
+            android:layout_toEndOf="@+id/etUkupniTroskovi"
+            android:layout_above="@+id/tvnacinplacanja"
+            android:id="@+id/absoluteLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/sl_valuta"
+                android:id="@+id/textView5"
+                android:layout_x="1dp"
+                android:layout_y="34dp" />
+        </AbsoluteLayout>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerNacinPlacanja"
+            android:layout_below="@+id/tvnacinplacanja"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignLeft="@id/tvnacinplacanja"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerStatusPlacanja"
+            android:layout_below="@+id/tvstatusplacanja"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignLeft="@id/tvnacinplacanja"/>
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvradservisera"
+            android:layout_toRightOf="@+id/etRadServisera"
+            android:layout_toEndOf="@+id/etRadServisera"
+            android:layout_alignBottom="@+id/etPutServisera">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="h"
+                android:id="@+id/textView6"
+                android:layout_x="4dp"
+                android:layout_y="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="h"
+                android:id="@+id/textView7"
+                android:layout_x="5dp"
+                android:layout_y="80dp" />
+        </AbsoluteLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sl_sacuvajservisnilist"
+            android:id="@+id/btnsacuvajservisnilist"
+            android:layout_below="@+id/etPutServisera"
+            android:layout_marginTop="74dp"
+            android:layout_alignRight="@+id/btn_provjeriproizvod"
+            android:layout_alignEnd="@+id/btn_provjeriproizvod"
+            android:layout_alignLeft="@+id/etPutServisera"
+            android:layout_alignStart="@+id/etPutServisera"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+</LinearLayout>

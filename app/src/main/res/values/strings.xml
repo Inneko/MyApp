@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Ekoline</string>
+    <string name="action_settings">Postavke</string>
+    <string name="action_search">Pretraga</string>
+    <string name="action_synchronize">Sinhronizuj</string>
+    <string name="action_test">test</string>
+    <string name="action_test1">test1</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_prijaviintervenciju">Prijavi intervenciju</string>
+    <string name="nav_item_otvoreneintervncije">Otvorene intervencije</string>
+    <string name="nav_item_servisnilist">Servisni list</string>
+    <string name="nav_item_provjeriproizvod">Provjeri proizvod</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_prijaviintervenciju</item>
+        <item>@string/nav_item_servisnilist</item>
+        <item>@string/nav_item_otvoreneintervncije</item>
+        <item>@string/nav_item_provjeriproizvod</item>
+    </string-array>
+
+    <!-- spinner DaNe  -->
+    <string-array name="spinnerDaNe">
+        <item>@string/spinnerDa</item>
+        <item>@string/spinnerNe</item>
+    </string-array>
+
+    <!-- spinner nacin placanja  -->
+    <string-array name="spinnerNacinPlacanja">
+        <item>@string/spinnerGotovinski</item>
+        <item>@string/spinnerFaktura</item>
+    </string-array>
+
+    <!-- spinner vrsta proizvoda  -->
+    <string-array name="spinnerVrstaProizvoda">
+        <item>7,5 kw</item>
+        <item>Slim</item>
+        <item>11 kW</item>
+        <item>Home</item>
+        <item>Industry</item>
+        <item>EasyLine</item>
+    </string-array>
+
+
+    <string name="spinnerDa">Da</string>
+    <string name="spinnerNe">Ne</string>
+
+    <string name="spinnerGotovinski">Gotovinski</string>
+    <string name="spinnerFaktura">Faktura</string>
+
+    <string name="title_prijaviintervenciju">Prijavi intervenciju</string>
+    <string name="title_servisnilist">Servisni list</string>
+    <string name="title_provjeriproizvod">Provjeri proizvod</string>
+    <string name="title_otvoreneintervencije">Otvorene intervencije</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_otvorene_intervencije">OtvoreneIntervencije</string>
+
+
+    <!-- stavke u servisnom listu  -->
+    <string name="sl_datumprijave">Datum prijave</string>
+    <string name="sl_vrstaproizvoda">Vrsta proizvoda</string>
+    <string name="sl_serijskibroj">Serijski broj</string>
+    <string name="sl_kupac">Klijent</string>
+    <string name="sl_adresa">Adresa</string>
+    <string name="sl_mjesto">Mjesto</string>
+    <string name="sl_kontakt1">Kontakt #1</string>
+    <string name="sl_kontakt2">Kontakt #2</string>
+    <string name="sl_primjedbakupca">Primjedba kupca</string>
+    <string name="sl_serviser">Serviser</string>
+    <string name="sl_datumkupovine">Datum kupovine</string>
+    <string name="sl_datumistekagarancije">Datum isteka garancije</string>
+    <string name="sl_napomena">Napomena</string>
+    <string name="sl_kvarpodlijezegaranciji">Kvar podliježe garanciji</string>
+    <string name="sl_nacinplacanja">Način plaćanja</string>
+    <string name="sl_troskovidijelova">Troškovi dijelova</string>
+    <string name="sl_troskovirada">Troškovi rada</string>
+    <string name="sl_putnitroskovi">Putni troškovi</string>
+    <string name="sl_statusplacanja">Plaćeno</string>
+    <string name="sl_radservisera">Rad servisera</string>
+    <string name="sl_putservisera">Put servisera</string>
+    <string name="sl_datumservisa">Datum servisa</string>
+    <string name="sl_provjeriproizvod">Provjeri proizvod</string>
+    <string name="sl_opisintervencije">Opis intervencije</string>
+    <string name="sl_ukupnitroskovi">Ukupni troškovi</string>
+    <string name="sl_sacuvajservisnilist">Sačuvaj servisni list</string>
+    <string name="sl_valuta">KM</string>
+
+
+    <!-- stavke za prijavu intervencije -->
+    <string name="pi_datumprijave">Datum prijave</string>
+    <string name="pi_vrstaproizvoda">Vrsta proizvoda</string>
+    <string name="pi_serijskibroj">Serijski broj</string>
+    <string name="pi_kupac">Klijent</string>
+    <string name="pi_adresa">Adresa</string>
+    <string name="pi_mjesto">Mjesto</string>
+    <string name="pi_kontakt1">Kontakt #1</string>
+    <string name="pi_kontakt2">Kontakt #2</string>
+    <string name="pi_opiskvara">Opis kvara</string>
+    <string name="pi_napomena">Napomena</string>
+    <string name="pi_prijaviintervenciju">Prijavi intervenciju</string>
+    
+
+
+</resources>
